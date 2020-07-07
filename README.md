@@ -1,4 +1,4 @@
-# @scripty/react-store
+# @scripty/react-buttons
 
 # Description
 
