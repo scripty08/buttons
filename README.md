@@ -4,6 +4,8 @@
 
 lightweight react button library.
 
+![alt text](./react-buttons.png "Hangar")
+
 # Usage
 ```bash
 npm install @scripty/react-buttons
