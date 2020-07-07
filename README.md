@@ -6,7 +6,7 @@ lightweight react button library.
 
 # Usage
 ```bash
-npm install @scripty/buttons
+npm install @scripty/react-buttons
 ```
 
 ##### Client: Example.jsx
