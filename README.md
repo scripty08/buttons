@@ -25,7 +25,7 @@ import {
     AddButton,
     MenuButton,
     CancelButton
-} from '@src';
+} from '@scripty/react-buttons';
 import PlusOutlined from '@ant-design/icons/lib/icons/PlusOutlined';
 import ExclamationOutlined from '@ant-design/icons/lib/icons/ExclamationOutlined';
 
