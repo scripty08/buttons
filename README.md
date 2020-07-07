@@ -4,7 +4,7 @@
 
 lightweight react button library.
 
-![alt text](./react-buttons.png "Hangar")
+![alt text](./react-buttons.png "@scripty/react-buttons")
 
 # Usage
 ```bash
