@@ -9,7 +9,7 @@ import {
     AddButton,
     MenuButton,
     CancelButton
-} from '@src';
+} from '../../src';
 import PlusOutlined from '@ant-design/icons/lib/icons/PlusOutlined';
 import ExclamationOutlined from '@ant-design/icons/lib/icons/ExclamationOutlined';
 import { DeleteButton } from '@src/Button';
