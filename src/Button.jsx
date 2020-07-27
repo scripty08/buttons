@@ -28,7 +28,8 @@ export const Button = (props) => {
         size = 'normal',
         iconBtn,
         rounded,
-        color ='#fff',
+        color = '#fff',
+        items = [],
         ...restProps
     } = props;
 
@@ -63,12 +64,28 @@ export const Button = (props) => {
         children = '';
     }
 
+    if (items.length > 0) {
+        classes = classes + ' dropdown';
+    }
+
+    if (items.length > 0 && iconBtn) {
+        classes = classes + ' icon-btn dropdown';
+        children = '';
+    }
+
     return (
         <StyledButton colors={colors} {...restProps} onClick={onClick} className={classes} type="submit">
             <span className={'label'}>
                 <span className={'start-icon icon-small'}>{icon}</span>
                 <span className={'text'}>{children}</span>
             </span>
+            {
+                (items.length > 0) ? (
+                    <div className="dropdown-content">
+                        {items}
+                    </div>
+                ) : null
+            }
         </StyledButton>
     );
 };
