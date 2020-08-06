@@ -9,6 +9,10 @@ import CloseOutlined from '@ant-design/icons/lib/icons/CloseOutlined';
 import CheckOutlined from '@ant-design/icons/lib/icons/CheckOutlined';
 import DeleteOutlined from '@ant-design/icons/lib/icons/DeleteOutlined';
 import Colour from 'color';
+import LeftOutlined from '@ant-design/icons/lib/icons/LeftOutlined';
+import DoubleRightOutlined from '@ant-design/icons/lib/icons/DoubleRightOutlined';
+import RightOutlined from '@ant-design/icons/lib/icons/RightOutlined';
+import DoubleLeftOutlined from '@ant-design/icons/lib/icons/DoubleLeftOutlined';
 
 const StyledButton = styled.button`
     color: #fff;
@@ -143,5 +147,33 @@ export const DeleteButton = (props) => {
     const { size = 'small', onClick, label = 'Delete', ...restProps } = props;
     return (
         <Button {...restProps} size={size} icon={<DeleteOutlined/>} onClick={onClick}>{label}</Button>
+    );
+};
+
+export const DoubleLeftButton = (props) => {
+    const { size = 'small', onClick, label = '', ...restProps } = props;
+    return (
+        <Button {...restProps} size={size} icon={<DoubleLeftOutlined />} onClick={onClick}>{label}</Button>
+    );
+};
+
+export const LeftButton = (props) => {
+    const { size = 'small', onClick, label = '', ...restProps } = props;
+    return (
+        <Button {...restProps} size={size} icon={<LeftOutlined />} onClick={onClick}>{label}</Button>
+    );
+};
+
+export const DoubleRightButton = (props) => {
+    const { size = 'small', onClick, label = '', ...restProps } = props;
+    return (
+        <Button {...restProps} size={size} icon={<DoubleRightOutlined />} onClick={onClick}>{label}</Button>
+    );
+};
+
+export const RightButton = (props) => {
+    const { size = 'small', onClick, label = '', ...restProps } = props;
+    return (
+        <Button {...restProps} size={size} icon={<RightOutlined />} onClick={onClick}>{label}</Button>
     );
 };
